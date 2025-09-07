@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+    width: 100%;
+}
+nav{
+    background-color: #333;
+    font-weight: 900;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h2{
+    font-size: 40px;
+    font-weight: 500 ;
+    color: white;
+}
+nav .part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;   
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.box{
+    height: 270px;
+    width: 350px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: lightblue;
+}
+footer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+footer p{
+    color: white;
+    font-weight: 500;
+    padding: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        gap: 10px;
+    }    
+    .content .box{
+        width: 90%;
+        height: auto;
+    }
+    nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    nav h2{
+        font-size: 25px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    nav h2{
+        padding-bottom: 10px;
+    }
+    nav .part1{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box p{
+        font-size: 12px;
+    }
+    .box h2{
+        font-size: 20px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+
+ }

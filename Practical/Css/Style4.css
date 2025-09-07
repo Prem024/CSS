@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding-top: 30px;
+    padding-left: 30px
+    
+}
+.card{
+    border: 1px solid black;
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;   
+    background-color: lightblue;
+}
+.card:hover{
+    transform: scale(1.11);
+}
+.card img{
+    width: 50%;
+    height: 180px;
+    object-fit: contain;
+}
+.card h2{
+    margin: 0;
+}
+.card p{
+    margin: 0;
+    font-weight: bolder;
+    /* color: seagreen; */
+}
